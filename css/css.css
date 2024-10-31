@@ -1,0 +1,126 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/image/fondo.jpg');
+    background-size: cover;
+    /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;
+    /* Centra la imagen */
+}
+
+.cabecera {
+    background-color: #BF9043;
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+    gap: 30px;
+}
+
+.cabecera button {
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: black;
+    padding: 40px 15px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+#Navegador a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #BF9043;
+    border-radius: 5px;
+}
+
+header .logo {
+    width: 70px;
+    height: auto;
+}
+
+footer {
+    background-color: #000000;
+    border: 1px solid black;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    /* Espacio entre los contenedores */
+    padding: 50px;
+}
+
+aside {
+    display: flex;
+    /* alinear eje y */
+    /* justify-content: center; */
+    /* alinea eje x  */
+    align-items: center;
+    /* justifica el texto */
+    text-align: justify;
+    /*  */
+    flex-direction: column;
+    flex: 1;
+    background-color: #BF9043;
+    max-width: fit-content;
+    margin: 20px;
+}
+
+aside img {
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+}
+
+aside p {
+    margin: 20px;
+    max-width: 400px;
+}
+
+
+main {
+    display: flex;
+}
+
+.video {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+}
+
+.contenedor>h4 {
+    color: #BF9043;
+}
+
+/* hermanos */
+h4+p {
+    color: rgb(47, 197, 197);
+}
+
+/* hijos directos  */
+.video>h1 {
+    color: #BF9043;
+}
+
+.video p {
+    color: rgb(89, 184, 184);
+    font-size: 20px;
+
+}
+
+/* hermanos, estan dispuestos correlativamente */
+p+h3 {
+
+    color: #BF9043;
+}
